@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head><br><br><br><marquee behaviour=slide bgcolor=skyblue direction=right scrollamount=10 onmouseover="this.stop();" onmouseout="this.start();"><h2> Yash Salunke's PortFolio </marquee>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+
+ <body onload="myFunction()">
+<div id="loading"></div>
+	 <style>*{
+padding: 0;
+margin: 0;
+}
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff
+    url('Rolling.gif')
+     no-repeat center center;
+    z-index: 99999;
+}
+
+header{
+width: 100%;
+height: 100vh;
+background-image: url('bg.jpg');
+background-size: cover;
+font-family: 'Dosis', sans-serif;
+}
+.header_menu{
+width: 100%;
+height: 100px;
+display: flex;
+flex-direction: row;
+align-items: center;
+/*  border:1px solid red;*/
+}
+.logo{
+width: 20%;
+text-align: center;
+}
+.logo img{
+height: 300px;
+}
+.menu_list{
+width: 80%;
+text-align: right;
+padding-right: 50px;
+}
+.menu_list li{
+display: inline-block;
+text-transform: uppercase;
+list-style: none;
+letter-spacing: 2px;
+padding-left: 50px;
+}
+.menu_list li a{
+color:rgba(255, 255, 255, .8);
+text-decoration: none;
+}
+.menu_list li a:hover{
+color:orange;
+}
+.header_content{
+text-transform: uppercase;
+width: 100%;
+height: 200px;
+position: absolute;
+top: 50%;
+left: 50%;
+color:rgba(255, 255, 255, .8);
+transform: translate(-50%, -50%);
+text-align: center;
+/*  border:1px solid red;*/
+}
+.header_content h2{
+margin-bottom: 50px;
+font-size: 17px;
+font-weight: 500;
+letter-spacing: 0.3em;
+}
+.header_content h1{
+margin-bottom: 50px;
+font-size: 50px;
+font-weight: 500;
+letter-spacing: 0.7em;
+}
+.header_content button{
+height: auto;
+padding:8px 37px;
+color:#fff;
+font-size: 12px;
+background-color: transparent;
+margin-right: 20px;
+}
+.header_content button a{
+text-transform: uppercase;
+text-decoration: none;
+color: white;
+letter-spacing: 1px;
+}
+.header_content button:hover{
+background-color: orange;
+border:1px solid white;
+		 }</style>
+
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about"><i class="fa fa-info-circle" aria-hidden="true"></i>
+About</a>
+            </li>
+            <li>
+                <a href="#experience"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</a>
+            </li>
+
+            <li>
+                <a href="#projects"><i class="fa fa-laptop" aria-hidden="true"></i>
+Projects</a>
+            </li>
+            <li>
+                <a href="#skills"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+Skills</a>
+            </li>
+            <li>
+                <a href="#contact"><i class="fa fa-phone-square" aria-hidden="true"></i>
+Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+	 <div id="lead">
+        <div id="lead-content" class="circle">
+
+<img src="Yash.jpeg" height=40% width="40%">
+
+		<h1>Yash Salunke</h1>
+            <h2>Computer Engineer</h2>
+            <a href="Yash Salunke Resume.pdf" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <h1>Hi!<br>
+                         I am Yash Salunke</h1>
+                         I am studying in TE class of Computer Department at " SSBT COET,Bambhori,Jalgaon ".&nbsp;
+                         I Completed my 12th (HSC) from " M.R.Mahajan Jr. College, Anturli ".&nbsp;
+                         Also I secured 82% in 10th (SSC) from " M. F. Taral Highschool, Anturli".&nbsp;
+                         My hobby is Playing Chess.&nbsp;
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">EDUCATION</h2>
+        <div id="experience-timeline">
+            <div data-date=" 2017-18 to  2020-21">
+                <h3>Shram Sadhana Bombay Trust's COLLEGE of ENGINEERING & TECHNOLOGY Bambhori, Jalgaon,</h3>
+                <h4>BE in Computer Engineering</h4>
+
+            </div>
+
+            <div data-date="2015-16 to 2016-17">
+                <h3>M.R.Mahajan Jr. College, Anturli</h3>
+                <h4>FYJC and SYJC in Science Stream</h4>
+
+            </div>
+
+            <div data-date="2009-10 to 2014-15">
+                <h3>M. F. Taral Highschool, Anturli</h3>
+                <h4>From 5th Standard to SSC</h4>
+
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="Project_Icon.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>MINOR PROJECT
+                        <br><hr>
+                           Automated Adverse Road Condition Detection System</h3>
+
+                        <a href="">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+
+            <li>Android Developement</li>
+            <li>Machine Learning</li>
+     		     <li>Basic PHP</li>
+     		      <li>HTML</li>
+     		       <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Basic Java</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Kotlin</li>
+
+
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+          <form method="POST" action="https://formspree.io/xgenoqpv">
+             <input type="hidden" name="_subject" value="Contact request from personal website" />
+             <input type="email" name="email" placeholder="Your email" required>
+              <input type="mobile" name="mobile" placeholder="Your mobile number" required>
+             <textarea name="message" placeholder="Your message" required></textarea>
+             <button type="submit">Send</button>
+         </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2k20 Yash Salunke
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>Follow Me On :-
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/yashsalunke" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/yash.salunke_" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/yashsalunke/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/yashgsalunke" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/yash_salunke_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+	    <marquee><h2>Thanks visit again....</marquee>
+		      <script>
+        // $(document).ready(function(){
+            //  $('div#loading').removeAttr('id');
+        // });
+        var preloader = document.getElementById("loading");
+        // window.addEventListener('load', function(){
+        //  preloader.style.display = 'none';
+        //  })
+
+        function myFunction(){
+            preloader.style.display = 'none';
+        };
+    </script>
+
+
+
+</body>
+
+</html>
