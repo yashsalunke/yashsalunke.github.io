@@ -30,6 +30,17 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-175564266-1');
+
+        // Get the theme toggle button element
+        const themeToggle = document.getElementById('theme-toggle');
+
+        // Function to toggle the dark theme
+        function toggleDarkTheme() {
+        document.body.classList.toggle('dark-theme');
+        }
+
+        // Event listener for the theme toggle button
+        themeToggle.addEventListener('click', toggleDarkTheme);
     </script>
     <script data-ad-client="ca-pub-2841460454128299" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
@@ -40,6 +51,22 @@
 
     <div id="loading"></div>
     <style>
+        :root {
+        --background-color: #f5f5f5;
+        --text-color: #333;
+        }
+        /* Dark theme */
+        .dark-theme {
+        --background-color: #333;
+        --text-color: #f5f5f5;
+        }
+
+        body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        }
+
+        
         * {
             padding: 0;
             margin: 0;
@@ -149,6 +176,14 @@
             background-color: orange;
             border: 1px solid white;
         }
+        #theme-toggle {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 
     <div id="mobile-menu-open" class="shadow-large">
@@ -166,12 +201,16 @@
             <li><a href="#projects"><i class="fa fa-laptop" aria-hidden="true"></i>Projects</a></li>
             <li><a href="#skills"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Skills</a></li>
             <li><a href="#contact"><i class="fa fa-phone-square" aria-hidden="true"></i>Contact</a></li>
+            <li><button id="theme-toggle">Toggle Theme</button></li>
         </ul>
+        <div></div>
+        
     </header>
-    <!-- End header -->
+    
 
     <div id="lead">
         <div id="lead-content" class="circle">
+            
 
             <img src="Profile.jpeg" height=40% width="40%" loading="lazy">
 
@@ -201,8 +240,7 @@
                 <div class="col-md-8">
                     <p>
                         <h1>Hi!<br> I am Yash Salunke</h1>
-                        I am studying in BE class of Computer Department at " SSBT COET,Bambhori,Jalgaon ".&nbsp;<br> I Completed my 12th (HSC) from " M.R.Mahajan Jr. College, Anturli ".&nbsp;<br> Also I secured 87.20% in 10th (SSC) from " M. F. Taral
-                        Highschool, Anturli".&nbsp;<br> My hobby is Playing Chess.&nbsp;<br>
+                        A passionate <b>Software Engineer</b>
                     </p>
                 </div>
             </div>
@@ -314,16 +352,13 @@
                     <ul>
 
                         <li><a href="Certificates/InternShala_Android_app_developement_training.pdf" target="_blank">Android Developement</a></li>
-                        <li><a href="Certificates/Internshala Machine Learning.pdf" target="_blank">Machine Learning</a></li>
-                        <li>Basic PHP</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
+                        <li>Angular</li>
                         <li>Python</li>
-                        <li>Basic Java</li>
-                        <li>C</li>
-                        <li>C++</li>
-                        <li>Kotlin</li>
+                        <li>Sharepoint</li>
+                        <li>Power Automate</li>
 
 
                     </ul>
@@ -350,7 +385,7 @@
                         <div class="row">
                             <div class="col-sm-5 copyright">
                                 <p>
-                                    Copyright &copy; 2k23 Yash Salunke
+                                    Copyright &copy; 2k24 Yash Salunke
                                 </p>
                             </div>
                             <div class="col-sm-2 top">
@@ -391,9 +426,9 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
                 <script src="js/scripts.min.js"></script>
                 <br><br><br>
-                <marquee bgcolor=skyblue">
+                <div style="background-color: skyblue;">
                     <h2> Thank You! Visit Again.</h2>
-                </marquee>
+                </div>
                 <script>
                     // $(document).ready(function(){
                     //  $('div#loading').removeAttr('id');
